@@ -1,9 +1,21 @@
-def add_and_check_even(a, b):
-    result = a + b
-    if result % 2 == 0:
-        return f"{result} is an even number"
-    else:
-        return f"{result} is an odd number"
+import java.util.Scanner;
 
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
+public class AddAndCheckEven {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Enter the first number: ");
+    int num1 = scanner.nextInt();
+
+    System.out.print("Enter the second number: ");
+    int num2 = scanner.nextInt();
+
+    int sum = num1 + num2;
+
+    if (sum % 2 == 0) {
+      System.out.println("The sum is even: " + sum);
+    } else {
+      System.out.println("The sum is odd: " + sum);
+    }
+  }
+}
